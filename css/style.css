@@ -490,7 +490,7 @@ a {
 #header .profilepic {
   text-align: center;
   display: block;
-  border: 5px solid #fff;
+  border: 1px solid #fff;
   -webkit-border-radius: 300px;
   border-radius: 300px;
   width: 128px;
@@ -505,6 +505,9 @@ a {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   text-align: center;
+}
+#header .profilepic:hover {
+  -webkit-transform: scale(1.2);
 }
 #header .profilepic img {
   width: 20%;
