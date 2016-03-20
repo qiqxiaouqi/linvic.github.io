@@ -872,6 +872,9 @@ a {
   -moz-animation: cd-bounce-1 0.6s;
   -ms-animation: cd-bounce-1 0.6s;
   animation: cd-bounce-1 0.6s;
+  -webkit-box-shadow: 0 0 6px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 0 6px rgba(0,0,0,.2);
+  box-shadow: 0 0 6px rgba(0,0,0,.2);
 }
 .article.hidden {
   visibility: hidden;
@@ -2115,7 +2118,7 @@ pre .css ~ * .id {
 }
 .article-tag:before {
   float: left;
-  color: #999;
+  color: #27AE61;
   content: "\f06c";
   font: 16px FontAwesome;
   float: left;
