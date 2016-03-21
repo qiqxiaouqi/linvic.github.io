@@ -490,7 +490,7 @@ a {
 #header .profilepic {
   text-align: center;
   display: block;
-  border: 1px solid #fff;
+  border: 5px solid #fff;
   -webkit-border-radius: 300px;
   border-radius: 300px;
   width: 128px;
@@ -505,9 +505,6 @@ a {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   text-align: center;
-}
-#header .profilepic:hover {
-  -webkit-transform: scale(1.2);
 }
 #header .profilepic img {
   width: 20%;
@@ -872,9 +869,6 @@ a {
   -moz-animation: cd-bounce-1 0.6s;
   -ms-animation: cd-bounce-1 0.6s;
   animation: cd-bounce-1 0.6s;
-  -webkit-box-shadow: 0 0 6px rgba(0,0,0,.2);
-  -moz-box-shadow: 0 0 6px rgba(0,0,0,.2);
-  box-shadow: 0 0 6px rgba(0,0,0,.2);
 }
 .article.hidden {
   visibility: hidden;
@@ -1137,7 +1131,7 @@ a {
   text-align: right;
 }
 .article-more-link a {
-  background: #1ABC9C;
+  background: #4d4d4d;
   color: #fff;
   font-size: 12px;
   padding: 2px 8px 4px;
@@ -1152,7 +1146,7 @@ a {
   transition: background 0.3s;
 }
 .article-more-link a:hover {
-  background: #28E1BD;
+  background: #3c3c3c;
 }
 .article-more-link a.hidden {
   visibility: hidden;
@@ -2118,7 +2112,7 @@ pre .css ~ * .id {
 }
 .article-tag:before {
   float: left;
-  color: #27AE61;
+  color: #999;
   content: "\f06c";
   font: 16px FontAwesome;
   float: left;
