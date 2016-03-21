@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/03/21/GitHub-Hexo搭建博客教程（一）：搭建前的准备工作/index.html">
 <meta property="og:site_name" content="陈焱林的博客">
 <meta property="og:description" content="相信很多朋友们都和我一样，希望搭建一个自己的博客。今天我就以我的经历，记录下利用github+hexo搭建博客的一些步骤。以及我遇到的一些坑的解决方法此外，后面我还会写如何加入多说评论功能。">
-<meta property="og:updated_time" content="2016-03-21T15:43:28.232Z">
+<meta property="og:updated_time" content="2016-03-21T15:53:51.344Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub+Hexo搭建博客教程（一）：搭建前的准备工作">
 <meta name="twitter:description" content="相信很多朋友们都和我一样，希望搭建一个自己的博客。今天我就以我的经历，记录下利用github+hexo搭建博客的一些步骤。以及我遇到的一些坑的解决方法此外，后面我还会写如何加入多说评论功能。">
@@ -218,28 +218,24 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>相信很多朋友们都和我一样，希望搭建一个自己的博客。<br>今天我就以我的经历，记录下利用github+hexo搭建博客的一些步骤。以及我遇到的一些坑的解决方法<br>此外，后面我还会写如何加入多说评论功能。<br><a id="more"></a></p>
-<p>###为什么使用GitHub+Hexo搭建博客？<br>在我刚建立这个博客的时候我也说了，在我建成这个博客之前我碰到很多坑，最终选择了这个方法。Hexo是基于node.js快速、简洁、高效的博客框架，可以方便的在本地搭建。生成的静态页面托管到github pages上能够使我们很容易的就搭建成一套自己的博客。 </p>
-<p>###搭建前的准备工作<br>搭建前我们都应该做那些准备工作呢？如下：</p>
-<ul>
-<li><p>安装Node.js</p>
-</li>
-<li><p>新建GitHub Pages</p>
-</li>
-<li><p>安装GitHub客户端</p>
-</li>
-<li><p>github生成SSH公钥</p>
-</li>
-</ul>
-<figure class="highlight plain"><figcaption><span>本教程以windows操作系统为例```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">进入正题，咱们一个一个来</span><br><span class="line"></span><br><span class="line">###安装Node.js</span><br><span class="line"></span><br><span class="line">去官网下载[https://nodejs.org](https://nodejs.org)，都下一步就可以。</span><br><span class="line"></span><br><span class="line">###新建GitHub Pages项目</span><br><span class="line"></span><br><span class="line">1. 如果你还没有github账号。那么去GitHub官网[https://github.com](https://github.com)注册一个，再进行下一步。</span><br><span class="line">2. 点击网站右上方的new repository。新建一个名字为```你的账号.github.io```，例如我的github账号是linvic，那么我就新建一个项目名为```linvic.github.io```的项目，记得勾选```Initialize this repository with a README```其他选项默认就行。</span><br><span class="line"></span><br><span class="line">###安装GitHub客户端</span><br><span class="line"></span><br><span class="line">1. 下载紫色github客户端。如果你跟我一样，在网上找不到紫色图标这个，或者下载速度有点慢，那么可以选择从我的网盘下载。[点击百度网盘下载GitHub客户端](http://pan.baidu.com/s/1c1uzAk4)。</span><br><span class="line">2. 下载后双击安装，这个过程可能会有些慢，或者会和我一样碰到安装失败的情况。耐心些，等等或者多试几次就可以成功安装。安装完成后，找到Git Shell待用。</span><br><span class="line"></span><br><span class="line">###github生成SSH公钥</span><br><span class="line">1. 使用Git Shell输入下面指令检查SSH公钥看看存不存在.ssh</span><br><span class="line"></span><br><span class="line">```cpp </span><br><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<p>如果存在的话，掠过下一步；不存在的请看下一步</p>
+<h2>为什么使用GitHub+Hexo搭建博客？</h2><br>在我刚建立这个博客的时候我也说了，在我建成这个博客之前我碰到很多坑，最终选择了这个方法。Hexo是基于node.js快速、简洁、高效的博客框架，可以方便的在本地搭建。生成的静态页面托管到github pages上能够使我们很容易的就搭建成一套自己的博客。<br><h2>搭建前的准备工作</h2><br>搭建前我们都应该做那些准备工作呢？如下：<br><br>- 安装Node.js<br><br>- 新建GitHub Pages<br><br>- 安装GitHub客户端<br><br>- github生成SSH公钥<br><br><code>PS: 本教程以windows操作系统为例</code><br><br>进入正题，咱们一个一个来<br><br><h2>安装Node.js</h2>
+
+<p>去官网下载<a href="https://nodejs.org" target="_blank" rel="external">https://nodejs.org</a>，都下一步就可以。</p>
+<h2>新建GitHub Pages项目</h2>
+
 <ol>
-<li>生成SSH公钥<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@youremail.com"</span></span><br></pre></td></tr></table></figure>
-</li>
+<li>如果你还没有github账号。那么去GitHub官网<a href="https://github.com" target="_blank" rel="external">https://github.com</a>注册一个，再进行下一步。</li>
+<li>点击网站右上方的new repository。新建一个名字为<code>你的账号.github.io</code>，例如我的github账号是linvic，那么我就新建一个项目名为<code>linvic.github.io</code>的项目，记得勾选<code>Initialize this repository with a README</code>其他选项默认就行。</li>
 </ol>
-<p>创建成功的话，你可以在自己的目录下，看到有一个.ssh目录</p>
+<h2>安装GitHub客户端</h2>
+
 <ol>
-<li>在github网站上面，为您的电脑添加公钥。在github官网上，点击右上角您头像的下拉选项，点击Settings。点击SSH keys选项，点击New SSH keys。<code>C:\Users\LinVic\.ssh文件下的idrsa.pub文件</code>使用记事本打开，复制里面的代码。添加到刚刚的网页输入框中。</li>
+<li>下载紫色github客户端。如果你跟我一样，在网上找不到紫色图标这个，或者下载速度有点慢，那么可以选择从我的网盘下载。<a href="http://pan.baidu.com/s/1c1uzAk4" target="_blank" rel="external">点击百度网盘下载GitHub客户端</a>。</li>
+<li>下载后双击安装，这个过程可能会有些慢，或者会和我一样碰到安装失败的情况。耐心些，等等或者多试几次就可以成功安装。安装完成后，找到Git Shell待用。</li>
 </ol>
+<p></p><h2>github生成SSH公钥</h2><br>1.使用Git Shell输入下面指令检查SSH公钥看看存不存在.ssh<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure><p></p>
+<p>如果存在的话，掠过下一步；不存在的请看下一步<br>2.生成SSH公钥<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@youremail.com"</span></span><br></pre></td></tr></table></figure></p>
+<p>创建成功的话，你可以在自己的目录下，看到有一个.ssh目录<br>3.在github网站上面，为您的电脑添加公钥。在github官网上，点击右上角您头像的下拉选项，点击Settings。点击SSH keys选项，点击New SSH keys。<code>C:\Users\LinVic.ssh文件下的idrsa.pub文件</code>使用记事本打开，复制里面的代码。添加到刚刚的网页输入框中。</p>
 <hr>
 
       
