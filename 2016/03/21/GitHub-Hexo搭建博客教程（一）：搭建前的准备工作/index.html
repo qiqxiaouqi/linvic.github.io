@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/03/21/GitHub-Hexo搭建博客教程（一）：搭建前的准备工作/index.html">
 <meta property="og:site_name" content="陈焱林的博客">
 <meta property="og:description" content="相信很多朋友们都和我一样，希望搭建一个自己的博客。今天我就以我的经历，记录下利用github+hexo搭建博客的一些步骤。以及我遇到的一些坑的解决方法此外，后面我还会写如何加入多说评论功能。">
-<meta property="og:updated_time" content="2016-03-21T15:53:51.344Z">
+<meta property="og:updated_time" content="2016-03-29T15:52:47.495Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub+Hexo搭建博客教程（一）：搭建前的准备工作">
 <meta name="twitter:description" content="相信很多朋友们都和我一样，希望搭建一个自己的博客。今天我就以我的经历，记录下利用github+hexo搭建博客的一些步骤。以及我遇到的一些坑的解决方法此外，后面我还会写如何加入多说评论功能。">
@@ -235,7 +235,8 @@
 </ol>
 <p></p><h2>github生成SSH公钥</h2><br>1.使用Git Shell输入下面指令检查SSH公钥看看存不存在.ssh<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure><p></p>
 <p>如果存在的话，掠过下一步；不存在的请看下一步<br>2.生成SSH公钥<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@youremail.com"</span></span><br></pre></td></tr></table></figure></p>
-<p>创建成功的话，你可以在自己的目录下，看到有一个.ssh目录<br>3.在github网站上面，为您的电脑添加公钥。在github官网上，点击右上角您头像的下拉选项，点击Settings。点击SSH keys选项，点击New SSH keys。<code>C:\Users\LinVic.ssh文件下的idrsa.pub文件</code>使用记事本打开，复制里面的代码。添加到刚刚的网页输入框中。</p>
+<p>看到以下信息，输入你的Github密码：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Creates a new ssh key using the provided email Generating public/private rsa key pair. </span><br><span class="line">Enter file in which to save the key (/home/you/.ssh/id_rsa):</span><br><span class="line">Enter passphrase (empty for no passphrase): [Type a passphrase] </span><br><span class="line">Enter same passphrase again: [Type passphrase again]</span><br></pre></td></tr></table></figure></p>
+<p>然后你在你的目录下会发现有一个.ssh目录，里面有一个id_rsa文件和一个id_rsa.pub文件，说明SSH私钥和公钥已经成功生成了。<br>3.在github网站上面，为您的电脑添加公钥。在github官网上，点击右上角您头像的下拉选项，点击Settings。点击SSH keys选项，点击New SSH keys。<code>C:\Users\LinVic.ssh文件下的idrsa.pub文件</code>使用记事本打开，复制里面的代码。添加到刚刚的网页输入框中。</p>
 <hr>
 
       

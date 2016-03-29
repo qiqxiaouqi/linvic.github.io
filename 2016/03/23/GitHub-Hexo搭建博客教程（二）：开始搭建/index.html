@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="陈焱林的博客">
 <meta property="og:description" content="上一篇我们讲到博客搭建的一些准备工作。时隔这么久，现在给大家讲讲如何搭建。（本教程以windows为例）
 安装hexo">
-<meta property="og:updated_time" content="2016-03-29T14:01:56.013Z">
+<meta property="og:updated_time" content="2016-03-29T15:57:05.506Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub+Hexo搭建博客教程（二）：开始搭建">
 <meta name="twitter:description" content="上一篇我们讲到博客搭建的一些准备工作。时隔这么久，现在给大家讲讲如何搭建。（本教程以windows为例）
@@ -231,9 +231,11 @@
 <h3 id="记住：以后每次本地修改博客（增删查改）后，都执行上面的代码才能在github博客上生效。"><a href="#记住：以后每次本地修改博客（增删查改）后，都执行上面的代码才能在github博客上生效。" class="headerlink" title="记住：以后每次本地修改博客（增删查改）后，都执行上面的代码才能在github博客上生效。"></a>记住：以后每次本地修改博客（增删查改）后，都执行上面的代码才能在github博客上生效。</h3><h2 id="bug坑"><a href="#bug坑" class="headerlink" title="bug坑"></a>bug坑</h2><ol>
 <li>在github部署完成之后，马上访问可能出现404错误，这是正常的，（最多）等待十分钟左右就可以访问了。如果还不行，那很可能是 github 发送给你的验证邮件你没有打开看，据多方反映，验证后就没问题了。</li>
 <li>如果在<code>hexo d</code>之后出现<code>fatal: &#39;username.github.io&#39; does not appear to be a git repository</code>，一是检查 repo 的名字是否合乎规范、是否含有大写字母、config.yml 中的 deploy 配置是否正确，二是把 Git Shell 关掉，重新打开再执行命令。</li>
-<li>如果使用 git bash的同学<code>hexo d</code>失败的话，请切换使用<code>Git Shell</code>，因为我曾经就是因为这个坑。<h3 id="安装Hexo插件"><a href="#安装Hexo插件" class="headerlink" title="安装Hexo插件"></a>安装Hexo插件</h3>如果你遇到其他问题，请尝试着安装下插件试试。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-deployer-heroku --save</span><br><span class="line">npm install hexo-deployer-rsync --save</span><br><span class="line">npm install hexo-deployer-openshift --save</span><br><span class="line">npm install hexo-renderer-marked@<span class="number">0.2</span> --save</span><br><span class="line">npm install hexo-renderer-stylus@<span class="number">0.2</span> --save</span><br><span class="line">npm install hexo-generator-feed@<span class="number">1</span> --save</span><br><span class="line">npm install hexo-generator-sitemap@<span class="number">1</span> --save</span><br></pre></td></tr></table></figure>
+<li>如果使用 git bash的同学<code>hexo d</code>失败的话，请切换使用<code>Git Shell</code>，因为我曾经就是因为这个坑。</li>
+<li>如果<code>hexo d</code>还是没有用，可以安装 hexo-deployer-git试试。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+<h3 id="安装Hexo插件"><a href="#安装Hexo插件" class="headerlink" title="安装Hexo插件"></a>安装Hexo插件</h3><p>如果你遇到其他问题，请尝试着安装下插件试试。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-deployer-heroku --save</span><br><span class="line">npm install hexo-deployer-rsync --save</span><br><span class="line">npm install hexo-deployer-openshift --save</span><br><span class="line">npm install hexo-renderer-marked@<span class="number">0.2</span> --save</span><br><span class="line">npm install hexo-renderer-stylus@<span class="number">0.2</span> --save</span><br><span class="line">npm install hexo-generator-feed@<span class="number">1</span> --save</span><br><span class="line">npm install hexo-generator-sitemap@<span class="number">1</span> --save</span><br></pre></td></tr></table></figure></p>
 <p>下一章节，我将介绍如何使用Hexo的主题。</p>
 
       
@@ -244,7 +246,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/03/29/GitHub-Hexo搭建博客教程（三）：博客配置及主题使用/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/25/GitHub-Hexo搭建博客教程（三）：博客配置及主题使用/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
