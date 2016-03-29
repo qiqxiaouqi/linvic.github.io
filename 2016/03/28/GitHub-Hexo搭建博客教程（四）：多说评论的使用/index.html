@@ -4,17 +4,20 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Tag: Hexo | 陈焱林的博客</title>
+  <title>GitHub+Hexo搭建博客教程（四）：多说评论的使用 | 陈焱林的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="陈焱林前端学习博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="陈焱林的博客">
-<meta property="og:url" content="http://yoursite.com/tags/Hexo/index.html">
+  <meta name="description" content="我记得在第一篇Hexo系列博客就说到要给大家讲解如何使用多说评论进行。其实很简单，那么今天就将给大家演示如何为咱们的博客添加多说评论。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub+Hexo搭建博客教程（四）：多说评论的使用">
+<meta property="og:url" content="http://yoursite.com/2016/03/28/GitHub-Hexo搭建博客教程（四）：多说评论的使用/index.html">
 <meta property="og:site_name" content="陈焱林的博客">
-<meta property="og:description" content="陈焱林前端学习博客">
+<meta property="og:description" content="我记得在第一篇Hexo系列博客就说到要给大家讲解如何使用多说评论进行。其实很简单，那么今天就将给大家演示如何为咱们的博客添加多说评论。">
+<meta property="og:image" content="http://yoursite.com/index_files/868f3824-5f2d-4e67-8922-9cf179814350.jpg">
+<meta property="og:updated_time" content="2016-03-29T16:14:21.956Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="陈焱林的博客">
-<meta name="twitter:description" content="陈焱林前端学习博客">
+<meta name="twitter:title" content="GitHub+Hexo搭建博客教程（四）：多说评论的使用">
+<meta name="twitter:description" content="我记得在第一篇Hexo系列博客就说到要给大家讲解如何使用多说评论进行。其实很简单，那么今天就将给大家演示如何为咱们的博客添加多说评论。">
+<meta name="twitter:image" content="http://yoursite.com/index_files/868f3824-5f2d-4e67-8922-9cf179814350.jpg">
   
     <link rel="alternative" href="/atom.xml" title="陈焱林的博客" type="application/atom+xml">
   
@@ -179,146 +182,111 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-GitHub-Hexo搭建博客教程（四）：多说评论的使用" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/2016/03/28/GitHub-Hexo搭建博客教程（四）：多说评论的使用/" class="article-date">
+  	<time datetime="2016-03-28T15:45:58.000Z" itemprop="datePublished">2016-03-28</time>
+</a>
+    </div>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      GitHub+Hexo搭建博客教程（四）：多说评论的使用
+    </h1>
+  
+
+      </header>
       
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/03/28/GitHub-Hexo搭建博客教程（四）：多说评论的使用/" class="archive-article-date">
-  	<time datetime="2016-03-28T15:45:58.000Z" itemprop="datePublished">Mar 28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/28/GitHub-Hexo搭建博客教程（四）：多说评论的使用/">GitHub+Hexo搭建博客教程（四）：多说评论的使用</a>
-    </h1>
-  
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我记得在第一篇Hexo系列博客就说到要给大家讲解如何使用多说评论进行。<br>其实很简单，那么今天就将给大家演示如何为咱们的博客添加多说评论。<br><a id="more"></a></p>
+<h1 id="添加多说评论功能"><a href="#添加多说评论功能" class="headerlink" title="添加多说评论功能"></a>添加多说评论功能</h1><p>如果没有多说请先到<a href="http://duoshuo.com/" title="多说" target="_blank" rel="external">多说</a>进行注册。<br>登录<a href="http://duoshuo.com/" title="多说" target="_blank" rel="external">多说</a>，获取key，并将key添加到配置文件中<br>如下图：箭头所指的就是你的多说的key(注意:后面的.duoshuo.com不需要)<br><img src="index_files/868f3824-5f2d-4e67-8922-9cf179814350.jpg" alt=""><br>将你的key填写到<code>E:Hexo/themes/yilia/_config.yml</code>中<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key</span></span><br><span class="line"><span class="meta">#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论</span></span><br><span class="line">duoshuo: linvic<span class="comment">//将此处的linvic换成你的多说key</span></span><br></pre></td></tr></table></figure></p>
+<p>就是这么简单~</p>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/03/25/GitHub-Hexo搭建博客教程（三）：博客配置及主题使用/" class="archive-article-date">
-  	<time datetime="2016-03-25T12:25:15.000Z" itemprop="datePublished">Mar 25</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/25/GitHub-Hexo搭建博客教程（三）：博客配置及主题使用/">GitHub+Hexo搭建博客教程（三）：博客配置及主题使用</a>
-    </h1>
   
+    <a href="/2016/03/25/GitHub-Hexo搭建博客教程（三）：博客配置及主题使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">GitHub+Hexo搭建博客教程（三）：博客配置及主题使用</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/03/23/GitHub-Hexo搭建博客教程（二）：开始搭建/" class="archive-article-date">
-  	<time datetime="2016-03-23T13:55:05.000Z" itemprop="datePublished">Mar 23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/23/GitHub-Hexo搭建博客教程（二）：开始搭建/">GitHub+Hexo搭建博客教程（二）：开始搭建</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/03/21/GitHub-Hexo搭建博客教程（一）：搭建前的准备工作/" class="archive-article-date">
-  	<time datetime="2016-03-21T14:31:45.000Z" itemprop="datePublished">Mar 21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/21/GitHub-Hexo搭建博客教程（一）：搭建前的准备工作/">GitHub+Hexo搭建博客教程（一）：搭建前的准备工作</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-	</div>
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="GitHub-Hexo搭建博客教程（四）：多说评论的使用" data-title="GitHub+Hexo搭建博客教程（四）：多说评论的使用" data-url="http://yoursite.com/2016/03/28/GitHub-Hexo搭建博客教程（四）：多说评论的使用/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"linvic"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
 
 </div>
       <footer id="footer">
@@ -344,9 +312,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
