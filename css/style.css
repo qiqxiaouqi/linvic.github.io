@@ -2112,7 +2112,7 @@ pre .css ~ * .id {
 }
 .article-tag:before {
   float: left;
-  color: #999;
+  color: #50aaff;
   content: "\f06c";
   font: 16px FontAwesome;
   float: left;
