@@ -223,11 +223,11 @@ a {
 #container #mobile-nav #header .profilepic img {
   width: 20%;
 }
-#container #mobile-nav #header .profilepic img.show {
-  width: 100%;
-}
 #container #mobile-nav #header .profilepic img:hover {
   width: 120%;
+}
+#container #mobile-nav #header .profilepic img.show {
+  width: 100%;
 }
 #container #mobile-nav #header .header-menu {
   height: auto;
