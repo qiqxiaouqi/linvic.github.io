@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>GitHub+Hexo搭建博客教程（一）：搭建前的准备工作 | 陈焱林的博客</title>
+  <title>利用giehub pages 访问github其他项目下的静态页面 | 陈焱林的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="相信很多朋友们都和我一样，希望搭建一个自己的博客。今天我就以我的经历，记录下利用github+hexo搭建博客的一些步骤。以及我遇到的一些坑的解决方法此外，后面我还会写如何加入多说评论功能。">
+  <meta name="description" content="本篇告诉你如何让我们的github项目实现在线预览。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub+Hexo搭建博客教程（一）：搭建前的准备工作">
-<meta property="og:url" content="http://yoursite.com/2016/03/21/GitHub-Hexo搭建博客教程（一）：搭建前的准备工作/index.html">
+<meta property="og:title" content="利用giehub pages 访问github其他项目下的静态页面">
+<meta property="og:url" content="http://yoursite.com/2016/04/01/利用giehub-pages-访问github其他项目下的静态页面/index.html">
 <meta property="og:site_name" content="陈焱林的博客">
-<meta property="og:description" content="相信很多朋友们都和我一样，希望搭建一个自己的博客。今天我就以我的经历，记录下利用github+hexo搭建博客的一些步骤。以及我遇到的一些坑的解决方法此外，后面我还会写如何加入多说评论功能。">
-<meta property="og:updated_time" content="2016-03-29T15:52:47.495Z">
+<meta property="og:description" content="本篇告诉你如何让我们的github项目实现在线预览。">
+<meta property="og:updated_time" content="2016-04-03T08:00:55.767Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GitHub+Hexo搭建博客教程（一）：搭建前的准备工作">
-<meta name="twitter:description" content="相信很多朋友们都和我一样，希望搭建一个自己的博客。今天我就以我的经历，记录下利用github+hexo搭建博客的一些步骤。以及我遇到的一些坑的解决方法此外，后面我还会写如何加入多说评论功能。">
+<meta name="twitter:title" content="利用giehub pages 访问github其他项目下的静态页面">
+<meta name="twitter:description" content="本篇告诉你如何让我们的github项目实现在线预览。">
   
     <link rel="alternative" href="/atom.xml" title="陈焱林的博客" type="application/atom+xml">
   
@@ -180,11 +180,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-GitHub-Hexo搭建博客教程（一）：搭建前的准备工作" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-利用giehub-pages-访问github其他项目下的静态页面" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/21/GitHub-Hexo搭建博客教程（一）：搭建前的准备工作/" class="article-date">
-  	<time datetime="2016-03-21T14:31:45.000Z" itemprop="datePublished">2016-03-21</time>
+      <a href="/2016/04/01/利用giehub-pages-访问github其他项目下的静态页面/" class="article-date">
+  	<time datetime="2016-04-01T07:10:20.000Z" itemprop="datePublished">2016-04-01</time>
 </a>
     </div>
   
@@ -197,7 +197,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      GitHub+Hexo搭建博客教程（一）：搭建前的准备工作
+      利用giehub pages 访问github其他项目下的静态页面
     </h1>
   
 
@@ -206,7 +206,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pages/">pages</a></li></ul>
 	</div>
 
         
@@ -217,27 +217,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>相信很多朋友们都和我一样，希望搭建一个自己的博客。<br>今天我就以我的经历，记录下利用github+hexo搭建博客的一些步骤。以及我遇到的一些坑的解决方法<br>此外，后面我还会写如何加入多说评论功能。<br><a id="more"></a></p>
-<h2>为什么使用GitHub+Hexo搭建博客？</h2><br>在我刚建立这个博客的时候我也说了，在我建成这个博客之前我碰到很多坑，最终选择了这个方法。Hexo是基于node.js快速、简洁、高效的博客框架，可以方便的在本地搭建。生成的静态页面托管到github pages上能够使我们很容易的就搭建成一套自己的博客。<br><h2>搭建前的准备工作</h2><br>搭建前我们都应该做那些准备工作呢？如下：<br><br>- 安装Node.js<br><br>- 新建GitHub Pages<br><br>- 安装GitHub客户端<br><br>- github生成SSH公钥<br><br><code>PS: 本教程以windows操作系统为例</code><br><br>进入正题，咱们一个一个来<br><br><h2>安装Node.js</h2>
-
-<p>去官网下载<a href="https://nodejs.org" target="_blank" rel="external">https://nodejs.org</a>，都下一步就可以。</p>
-<h2>新建GitHub Pages项目</h2>
-
+        <h3 id="本篇告诉你如何让我们的github项目实现在线预览。"><a href="#本篇告诉你如何让我们的github项目实现在线预览。" class="headerlink" title="本篇告诉你如何让我们的github项目实现在线预览。"></a>本篇告诉你如何让我们的github项目实现在线预览。</h3><a id="more"></a>
+<p>我们都知道，咱们的项目push到github上面的时候，我们看到的是源代码，可是有时候我们想将我们项目的效果展示给他人时，就会想，<strong>如果github能够实时预览项目效果那该多好？</strong></p>
+<p>但是其实github pages可以解决我们这个问题。<br>先来讲下原理：咱们利用gh-pages分支，将需要预览的项目push到这个分支中，就可以实现在线预览项目效果了！</p>
+<p>原理看懂了得大神应该已经明白了，下面的详细步骤适合还是没懂的朋友。</p>
+<p>关于github pages的创建过程我这里就不复述了，我前面的博客搭建教程中有的。</p>
+<p><strong>本篇前提：</strong></p>
+<ul>
+<li>拥有github pages</li>
+</ul>
 <ol>
-<li>如果你还没有github账号。那么去GitHub官网<a href="https://github.com" target="_blank" rel="external">https://github.com</a>注册一个，再进行下一步。</li>
-<li>点击网站右上方的new repository。新建一个名字为<code>你的账号.github.io</code>，例如我的github账号是linvic，那么我就新建一个项目名为<code>linvic.github.io</code>的项目，记得勾选<code>Initialize this repository with a README</code>其他选项默认就行。</li>
+<li><p>首先，我在github中新建了一个名为”demo”的项目，新建之后这里当然是没有内容的，咱们留着SSH备用（git@github.com:linvic/demo.git）</p>
+</li>
+<li><p>然后咱们新建一个文件夹（我在我电脑新建了一个E:demo）</p>
+</li>
+<li><p>打开“Git Shell”（或者git bash） cd到咱们的本地项目文件夹下，初始化本地项目。相关命令如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd E:demo</span><br><span class="line">git init</span><br><span class="line">git remote add origin git@github.com:linvic/demo.git</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<h2>安装GitHub客户端</h2>
-
+<p><em>把上面的项目地址换成你自己的</em></p>
 <ol>
-<li>下载紫色github客户端。如果你跟我一样，在网上找不到紫色图标这个，或者下载速度有点慢，那么可以选择从我的网盘下载。<a href="http://pan.baidu.com/s/1c1uzAk4" target="_blank" rel="external">点击百度网盘下载GitHub客户端</a>。</li>
-<li>下载后双击安装，这个过程可能会有些慢，或者会和我一样碰到安装失败的情况。耐心些，等等或者多试几次就可以成功安装。安装完成后，找到Git Shell待用。</li>
+<li>我们新建立一个html文件进行测试，我在<code>E:demo</code>下新建了一个test.html，内容随便放点。</li>
 </ol>
-<p></p><h2>github生成SSH公钥</h2><br>1.使用Git Shell输入下面指令检查SSH公钥看看存不存在.ssh<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure><p></p>
-<p>如果存在的话，掠过下一步；不存在的请看下一步<br>2.生成SSH公钥<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@youremail.com"</span></span><br></pre></td></tr></table></figure></p>
-<p>看到以下信息，输入你的Github密码：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Creates a new ssh key using the provided email Generating public/private rsa key pair. </span><br><span class="line">Enter file in which to save the key (/home/you/.ssh/id_rsa):</span><br><span class="line">Enter passphrase (empty for no passphrase): [Type a passphrase] </span><br><span class="line">Enter same passphrase again: [Type passphrase again]</span><br></pre></td></tr></table></figure></p>
-<p>然后你在你的目录下会发现有一个.ssh目录，里面有一个id_rsa文件和一个id_rsa.pub文件，说明SSH私钥和公钥已经成功生成了。<br>3.在github网站上面，为您的电脑添加公钥。在github官网上，点击右上角您头像的下拉选项，点击Settings。点击SSH keys选项，点击New SSH keys。<code>C:\Users\LinVic.ssh文件下的idrsa.pub文件</code>使用记事本打开，复制里面的代码。添加到刚刚的网页输入框中。</p>
-<hr>
+<p><strong>接着，主角登场~</strong></p>
+<ol>
+<li>然后回到“Git Shell”（或者git bash）。新建一个“gh-pages”的分支，然后将当前项目下的文件都push到远程仓库。相关命令如下：<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b gh-pages</span><br><span class="line">git add *</span><br><span class="line">git commit -m 'test'</span><br><span class="line">git push origin gh-pages</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这样，咱们再访问pages主页/项目名/文件名(如：linvic.github.io/demo/test.html)就能直接预览代码效果了！</p>
+<p>PS：这篇文章为了方便我们是直接新建一个仓库进行测试，实际应用中大家可以先将自己远程库中的项目<code>$ git clone</code>到本地，然后新建gh-pages分支，再push到gh-pages分支即可！</p>
+<p>好了，如果有问题欢迎留言哦。</p>
 
       
     </div>
@@ -247,18 +256,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/03/23/GitHub-Hexo搭建博客教程（二）：开始搭建/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          GitHub+Hexo搭建博客教程（二）：开始搭建
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/03/19/记录这历史性的一刻，我的博客建立啦/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">记录这历史性的一刻，我的博客建立啦</div>
+    <a href="/2016/03/29/GitHub-Hexo搭建博客教程之给博客设置个性域名/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">GitHub+Hexo搭建博客教程之给博客设置个性域名.md</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -293,7 +293,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="GitHub-Hexo搭建博客教程（一）：搭建前的准备工作" data-title="GitHub+Hexo搭建博客教程（一）：搭建前的准备工作" data-url="http://yoursite.com/2016/03/21/GitHub-Hexo搭建博客教程（一）：搭建前的准备工作/"></div>
+	<div class="ds-thread" data-thread-key="利用giehub-pages-访问github其他项目下的静态页面" data-title="利用giehub pages 访问github其他项目下的静态页面" data-url="http://yoursite.com/2016/04/01/利用giehub-pages-访问github其他项目下的静态页面/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
